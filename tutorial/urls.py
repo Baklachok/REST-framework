@@ -32,3 +32,7 @@ urlpatterns = [
 ]
 
 urlpatterns += router.urls
+
+urlpatterns += [
+    path('api-auth/', include('rest_framework.urls')),
+]
